@@ -1,0 +1,22 @@
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 3 * * 1"
+permissions:
+  contents: read
+jobs:
+  kit-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pyyaml
+      - name: Frontmatter, manifests, versions, skill count, links, secrets and personal data
+        run: python3 scripts/validate_kit.py
+      - name: External links (warnings only)
+        run: python3 scripts/validate_kit.py --external || true

@@ -1,0 +1,25 @@
+{
+  "name": "ai-agentic-saas",
+  "displayName": "AI Agentic SaaS",
+  "version": "0.3.0",
+  "description": "Run a whole business from one AI agent: CEO and COO coordinators plus 33 skills (3 for leadership and setup, 28 across marketing, sales, operations with support, finance and HR, and 2 builders), on any MCP-enabled white-label SaaS platform.",
+  "author": {
+    "name": "AI Agentic SaaS contributors"
+  },
+  "homepage": "https://github.com/myappz-ai/ai-agentic-saas",
+  "repository": "https://github.com/myappz-ai/ai-agentic-saas",
+  "license": "MIT",
+  "keywords": [
+    "agentic",
+    "saas",
+    "crm",
+    "marketing",
+    "sales",
+    "operations",
+    "finance",
+    "hr",
+    "micro apps",
+    "grok bot",
+    "white-label"
+  ]
+}

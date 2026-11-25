@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "platform-account": {
+      "url": "https://your-account-connection-link.example/mcp"
+    }
+  }
+}
